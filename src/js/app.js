@@ -1,3 +1,8 @@
-const title = document.querySelectorAll("h1")[0];
+import User from "./User.js";
 
-const title_2 = document.querySelectorAll("h2")[0] || undefined;
+let guillaume = new User({
+  name: "Guillaume",
+  age: 37,
+});
+
+console.log(guillaume);

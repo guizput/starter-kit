@@ -8,6 +8,7 @@
     "build:sass": "sass  --no-source-map src/sass:public/css",
     "build:babel": "./node_modules/.bin/babel src/js --out-dir public/js",
     "copy:html": "html-includes --src src --dest public",
+    "copy:js": "copyfiles -u 2 src/js/**/*.js public/js",
     "copy": "npm-run-all --parallel copy:*",
     "watch:html": "onchange 'src/*.html' -- npm run copy:html",
     "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
